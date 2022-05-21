@@ -45,19 +45,19 @@
           </select>
           <div class="selectable card-body text-center" name="DVD" id="DVD" style="display: none;">
             <label for="size">SIZE</label>
-            <input type="text" name="size" class="form-control w-100" id="size">
+            <input type="text" name="size" class="form-control w-100" id="size" required number="true">
           </div>
           <div class="selectable card-body text-center" name="book" id="book" style="display: none;">
             <label for="weight">WEIGHT</label>
-            <input type="text" name="weight" class="form-control w-100" id="weight">
+            <input type="text" name="weight" class="form-control w-100" id="weight" required number="true">
           </div>
           <div class="selectable card-body text-center" name="furniture" id="furniture" style="display: none;">
             <label for="height">Height</label>
-            <input type="text" name="height" class="form-control w-100" id="height">
+            <input type="text" name="height" class="form-control w-100" id="height" required number="true">
             <label for="width">Width</label>
-            <input type="text" name="width" class="form-control w-100" id="width">
+            <input type="text" name="width" class="form-control w-100" id="width" required number="true">
             <label for="length">Length</label>
-            <input type="text" name="length" class="form-control w-100" id="length">
+            <input type="text" name="length" class="form-control w-100" id="length" required number="true">
           </div>
           <script>
           $("#productType").on("change", function() {
@@ -81,7 +81,7 @@
               productType: {
                 required: true
               }
-            },
+            }
             });
             });
           </script>
