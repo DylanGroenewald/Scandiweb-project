@@ -5,9 +5,9 @@ if(isset($_POST['save-btn'])){
         $sku =  $_REQUEST['sku'];
         $name = $_REQUEST['name'];
         $price =  $_REQUEST['price'];
-        $size = $_REQUEST['size'];
-        $weight = $_REQUEST['weight'];
-        $dimension = $_REQUEST['height'] . "x" . $_REQUEST['width'] . "x" . $_REQUEST['length'];
+        $size = $_REQUEST['size'] . " MB";
+        $weight = $_REQUEST['weight']. " KG";
+        $dimension = "Dimension" . $_REQUEST['height'] . "x" . $_REQUEST['width'] . "x" . $_REQUEST['length'];
         $value = $_REQUEST['productType'];
 
 
